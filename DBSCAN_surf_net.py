@@ -19,7 +19,7 @@ real_X = np.array(onlinetimes).reshape((-1, 2))
 
 X = real_X[:, 0:1]
 
-db = DBSCAN(eps=0.01, min_samples = 20).fit(X)
+db = DBSCAN(eps=0.01, min_samples=20).fit(X)
 labels = db.labels_
 
 print('Labels:')
