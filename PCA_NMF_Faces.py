@@ -29,7 +29,7 @@ def plot_gallery(title, images, n_col=n_col, n_row=n_row):
         plt.xticks(())
         plt.yticks(())
     # 对子图位置及间隔调整
-    plt.subplots_adjust(0.01, 0.05, 0.99, 0.94, 0.04, 0.)
+    plt.subplots_adjust(0.01, 0.05, 0.99, 0.94, 0.04, 0.)   # subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, hspace=None)
 
 
 plot_gallery("First centered Olivetti faces", faces[:n_components])
@@ -42,7 +42,7 @@ estimators = [
     ('Non-negative components - NMF',
      decomposition.NMF(n_components=6, init='nndsvda', tol=5e-3))
 ]
-
+plt.show()
 ###############################################################################
 # 降维后数据点的可视化
 for name, estimator in estimators:
