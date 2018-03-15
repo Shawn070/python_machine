@@ -77,6 +77,9 @@ if __name__ == '__main__':
     print(classification_report(y_test, answer_gnb))
 
 '''
+时间：2018年3月15日 21:51:44
+Result:
+
 Start training knn!
 Training done!
 Prediction done!
